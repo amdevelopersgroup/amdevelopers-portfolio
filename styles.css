@@ -231,7 +231,9 @@ html[data-theme="light"] .contact-card__glow { border-color: color-mix(in srgb, 
 .form-field input, .form-field select, .form-field textarea { width: 100%; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--text); outline: none; transition: border-color .2s, background .2s, box-shadow .2s; }
 .form-field input, .form-field select { min-height: 52px; padding: 0 15px; }
 .form-field textarea { min-height: 142px; resize: vertical; padding: 15px; line-height: 1.55; }
-.form-field select { cursor: pointer; }
+.form-field select { cursor: pointer; color-scheme: dark; }
+html[data-theme="light"] .form-field select { color-scheme: light; }
+.form-field select option { background-color: var(--bg-solid); color: var(--text); }
 .form-field input::placeholder, .form-field textarea::placeholder { color: color-mix(in srgb, var(--muted) 72%, transparent); }
 .form-field input:hover, .form-field select:hover, .form-field textarea:hover { border-color: var(--line-strong); }
 .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: color-mix(in srgb, var(--accent) 72%, var(--line)); background: var(--surface-strong); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 10%, transparent); }
